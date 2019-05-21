@@ -1,10 +1,10 @@
 <template>
   <v-container>
     <v-layout
-      text-xs-center
+      justify-center
       wrap
     >
-      <v-flex xs12>
+      <v-flex xs8>
         Michael Talley
         Full Stack Web Developer
         Medford, MA

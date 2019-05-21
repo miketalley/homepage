@@ -1,13 +1,13 @@
 <template>
-  <HelloWorld />
+  <MainContent />
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+import MainContent from '@/components/MainContent.vue';
 
-  export default {
-    components: {
-      HelloWorld
-    }
+export default {
+  components: {
+    MainContent
   }
+};
 </script>

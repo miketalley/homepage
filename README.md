@@ -1,10 +1,10 @@
 # Homepage
 
-(Vue)[https://vuejs.org/]
+[Vue](https://vuejs.org/)
 
-(Vuex)[https://vuex.vuejs.org/]
+[Vuex](https://vuex.vuejs.org/)
 
-(Vuetify)[https://vuetifyjs.com/en/]
+[Vuetify](https://vuetifyjs.com/en/)
 
 
 ## Project setup

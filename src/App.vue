@@ -1,15 +1,37 @@
 <template>
   <v-app dark>
     <v-toolbar app>
+      <v-toolbar-side-icon hidden-md-and-up>
+
+      </v-toolbar-side-icon>
       <v-toolbar-title class="headline text-uppercase">
         <span>Mike Talley</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
+      <v-btn flat hidden-sm>
+        Foo
+      </v-btn>
+      <v-btn flat hidden-sm>
+        Foo
+      </v-btn>
+      <v-btn flat hidden-sm>
+        Foo
+      </v-btn>
+      <v-spacer></v-spacer>
+      <v-btn
+        flat
+        href="mailto:michaeldtalley@gmail.com"
+        target="_blank"
+      >
+        <span class="mr-2">Email Mike</span>
+      </v-btn>
     </v-toolbar>
 
     <v-content>
       <particles-container>
-        <main-content/>
+        <v-container>
+          <main-content/>
+        </v-container>
       </particles-container>
     </v-content>
   </v-app>

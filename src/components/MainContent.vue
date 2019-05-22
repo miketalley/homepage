@@ -4,7 +4,7 @@
       justify-center
       wrap
     >
-      <v-flex xs10 md6>
+      <v-flex xs10 md8 lg6>
         <v-flex xs12 my-4 class="display-2">
           Mike Talley
         </v-flex>

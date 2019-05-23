@@ -2,6 +2,7 @@
   <v-toolbar app>
     <v-toolbar-items class="hidden-sm-and-down">
       <v-menu
+        offset-y
         v-for="item in menuItems"
         :key="item.title"
       >
@@ -17,22 +18,64 @@
         <v-list v-if="item.links">
           <v-list-tile v-for="link in item.links" :key="link.title">
             <v-list-tile-content>
-              <v-list-tile-title>{{ link.title }}</v-list-tile-title>
+              <v-btn
+                :href="link.url"
+                target="_blank"
+                flat
+              >
+                {{ link.title }}
+              </v-btn>
             </v-list-tile-content>
           </v-list-tile>
         </v-list>
       </v-menu>
     </v-toolbar-items>
-    <v-menu class="hidden-md-and-up">
-      <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
-      <v-list>
-        <v-list-tile v-for="item in menuItems" :key="item.title">
-          <v-list-tile-content>
-            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-    </v-menu>
+    <v-toolbar-items
+      class="hidden-md-and-up"
+    >
+      <v-menu
+        offset-y
+      >
+        <template slot="activator">
+          <v-toolbar-side-icon></v-toolbar-side-icon>
+        </template>
+        <v-list>
+          <div v-for="item in menuItems" :key="item.title">
+            <v-list-tile v-if="!item.links">
+              <v-list-tile-content>
+                <v-btn
+                  :href="item.url"
+                  target="_blank"
+                  flat
+                >
+                  {{ item.title }}
+                </v-btn>
+              </v-list-tile-content>
+            </v-list-tile>
+            <div v-if="item.links">
+              <v-divider></v-divider>
+              <v-subheader>
+                {{ item.title }}
+              </v-subheader>
+              <v-list-tile
+                v-for="link in item.links"
+                :key="link.title"
+              >
+                <v-list-tile-content>
+                  <v-btn
+                    :href="link.url"
+                    target="_blank"
+                    flat
+                  >
+                    {{ link.title }}
+                  </v-btn>
+                </v-list-tile-content>
+              </v-list-tile>
+            </div>
+          </div>
+        </v-list>
+      </v-menu>
+    </v-toolbar-items>
     <v-spacer></v-spacer>
     <v-btn
       flat
@@ -61,12 +104,20 @@ export default {
           title: 'App Examples',
           links: [
             {
-              title: 'Test',
-              url: ''
+              title: 'Gamebonder',
+              url: 'http://gamebonder.herokuapp.com/'
             },
             {
-              title: 'Test2',
-              url: ''
+              title: 'Beerbonder',
+              url: 'http://beerbonder.herokuapp.com/'
+            },
+            {
+              title: 'Is it just me, or?',
+              url: 'http://isitjustmeor.herokuapp.com/'
+            },
+            {
+              title: 'Lunch Date',
+              url: 'http://lunchdate.herokuapp.com/'
             }
           ]
         }

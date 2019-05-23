@@ -7,12 +7,15 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "start": "node server.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "express": "^4.17.0",
     "parallax-js": "^3.1.0",
     "particles.js": "^2.0.0",
+    "serve-static": "^1.14.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuetify": "^1.5.5",

@@ -25,8 +25,8 @@
         </v-layout>
         <parallax-flex :depth="0.6" :mb="3">
           I am a front end developer that loves working with new technologies. I write concise,
-          easily understandable and easily extensible code. I know the balance between doing things
-          correctly and doing things quickly, while also adhering to <a
+          easily understandable, and easily extensible code. I know the balance between doing things
+          correctly and doing things quickly, while adhering to <a
           href="https://martinfowler.com/bliki/Yagni.html" target="_blank">YAGNI</a> principles. I
           believe that simplicity in code is important and achieveable when things are done right.
         </parallax-flex>
@@ -38,16 +38,13 @@
           href="https://aws.amazon.com/">AWS</a> to create a service-oriented architecture of
           applications that, together, deliver our guided marketing solution to small businesses. My
           day-to-day involves coding in mostly Javascript on the front-end to create highly
-          intuitive UI components. A big part of being a senior level is mentoring more junior
-          developers and promoting their continues learning and growth.
+          intuitive UI components. A big part of being senior level is mentoring more junior
+          developers and promoting their continued learning and growth.
         </parallax-flex>
         <parallax-flex :depth="1.3" :mb="3">
           Javascript is my native language and I look forward to learning more ways to solve
           problems and create new and beautiful applications with it. Vue and Node/Express are two
-          technologies that I am extremely excited about and would like to work more with. with a
-          team that has a clear product vision, a culture of inclusivity with developers, and
-          prefers to create streamlined applications that leverage modern Javascript frameworks and
-          libraries (Vue and Node/Express hopefully).
+          technologies that I am extremely excited about and would like to work with in the future.
         </parallax-flex>
       </v-flex>
     </v-layout>

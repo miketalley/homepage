@@ -1,5 +1,5 @@
 <template>
-  <v-flex :class="marginBottom" ref="container">
+  <v-flex :class="generatedClass" ref="container">
     <div :data-depth="depth">
       <slot />
     </div>
@@ -18,6 +18,10 @@ export default {
     mb: {
       type: Number,
       required: false
+    },
+    ml: {
+      type: Number,
+      required: false
     }
   },
   data() {
@@ -32,8 +36,14 @@ export default {
     });
   },
   computed: {
+    generatedClass() {
+      return `${this.marginBottom} ${this.marginLeft}`;
+    },
     marginBottom() {
       return `mb-${this.mb}`;
+    },
+    marginLeft() {
+      return `ml-${this.ml}`;
     }
   }
 };

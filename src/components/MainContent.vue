@@ -5,13 +5,13 @@
       wrap
     >
       <v-flex xs10 md8 lg6>
-        <v-layout>
-          <v-flex xs12 md2>
+        <v-layout row wrap>
+          <v-flex xs12 md3>
             <parallax-flex :depth="0.3" :mb="1">
               <img src="img/mike-512x512.png">
             </parallax-flex>
           </v-flex>
-          <v-flex xs12 md10>
+          <v-flex xs12 md9>
             <parallax-flex :depth="0.1" :mb="1" class="display-2">
               Mike Talley
             </parallax-flex>

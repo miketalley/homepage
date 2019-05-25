@@ -24,33 +24,30 @@
           </v-flex>
         </v-layout>
         <parallax-flex :depth="0.6" :mb="3">
-          I am currently working as a Front End Developer for ThriveHive, a small business
-          marketing startup in Cambridge. My day to day focuses on using Javascript, and
-          Durandal to build our dynamic, responsive single paged application. Some other
-          libraries that we leverage are Knockout JS, Require, and jQuery.
+          I am a front end developer that loves working with new technologies. I write concise,
+          easily understandable and easily extensible code. I know the balance between doing things
+          correctly and doing things quickly, while also adhering to <a
+          href="https://martinfowler.com/bliki/Yagni.html" target="_blank">YAGNI</a> principles. I
+          believe that simplicity in code is important and achieveable when things are done right.
         </parallax-flex>
         <parallax-flex :depth="0.9" :mb="3">
-          Previous to ThriveHive, I was a full-time student in the Web Development Immersive
-          program at General Assembly focusing on Javascript, Ruby on Rails, AngularJS, and D3.
+          I am currently a Senior Front End Developer at <a
+          href="https://www.thrivehive.com">ThriveHive</a> in Boston, MA. We utilize <a
+          href="https://vuejs.org/">Vue</a>, <a href="https://nodejs.org/en/">Node</a>,
+          <a href="https://expressjs.com/">Express</a>, and <a
+          href="https://aws.amazon.com/">AWS</a> to create a service-oriented architecture of
+          applications that, together, deliver our guided marketing solution to small businesses. My
+          day-to-day involves coding in mostly Javascript on the front-end to create highly
+          intuitive UI components. A big part of being a senior level is mentoring more junior
+          developers and promoting their continues learning and growth.
         </parallax-flex>
         <parallax-flex :depth="1.3" :mb="3">
-          Before pivoting into web development, I was working as a Financial Advisor for Merrill
-          Lynch in Cambridge, MA. In my 8 years working with Bank of America/Merrill Lynch I
-          gained both face-to-face experience assisting clients with a large spectrum of
-          financial needs as well as experience working as part of a team to deliver on our
-          goals.
-        </parallax-flex>
-        <parallax-flex :depth="1.8" :mb="3">
-          My desire to work with more complex technical problems drove me to continue learning
-          code. The career transition was streamlined by the WDI course that I completed at
-          General Assembly.
-        </parallax-flex>
-        <parallax-flex :depth="2.4" :mb="3">
-          JavaScript Durandal Knockout jQuery Angular JS D3.js - Data Driven Documents Ruby/Ruby
-          on Rails Firebase PostgreSQL Redis Please feel free to view some of my projects on
-          GitHub. I have worked on several solo projects and also been part of a collaborative
-          effort using git. If you have any questions, or know of a position that may be a good
-          match, please email me.
+          Javascript is my native language and I look forward to learning more ways to solve
+          problems and create new and beautiful applications with it. Vue and Node/Express are two
+          technologies that I am extremely excited about and would like to work more with. with a
+          team that has a clear product vision, a culture of inclusivity with developers, and
+          prefers to create streamlined applications that leverage modern Javascript frameworks and
+          libraries (Vue and Node/Express hopefully).
         </parallax-flex>
       </v-flex>
     </v-layout>

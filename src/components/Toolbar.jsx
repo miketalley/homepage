@@ -1,0 +1,198 @@
+import React, { useState } from 'react';
+import {
+  AppBar,
+  Toolbar as MuiToolbar,
+  Button,
+  Menu,
+  MenuItem,
+  IconButton,
+  Box,
+  List,
+  ListItem,
+  ListItemText,
+  Divider,
+  ListSubheader,
+  useMediaQuery,
+  useTheme,
+} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+
+const menuItems = [
+  {
+    title: 'Resume',
+    url: '/assets/MikeTalleyResume.pdf',
+  },
+  {
+    title: 'Github',
+    url: 'https://github.com/miketalley',
+  },
+  {
+    title: 'App Examples',
+    links: [
+      {
+        title: 'Gamebonder',
+        url: 'http://gamebonder.herokuapp.com/',
+      },
+      {
+        title: 'Beerbonder',
+        url: 'http://beerbonder.herokuapp.com/',
+      },
+      {
+        title: 'Is it just me, or?',
+        url: 'http://isitjustmeor.herokuapp.com/',
+      },
+      {
+        title: 'Lunch Date',
+        url: 'http://lunchdate.herokuapp.com/',
+      },
+    ],
+  },
+];
+
+function Toolbar() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [mobileMenuAnchor, setMobileMenuAnchor] = useState(null);
+  const [activeMenu, setActiveMenu] = useState(null);
+
+  const handleMenuOpen = (event, menuTitle) => {
+    setAnchorEl(event.currentTarget);
+    setActiveMenu(menuTitle);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+    setActiveMenu(null);
+  };
+
+  const handleMobileMenuOpen = (event) => {
+    setMobileMenuAnchor(event.currentTarget);
+  };
+
+  const handleMobileMenuClose = () => {
+    setMobileMenuAnchor(null);
+  };
+
+  return (
+    <AppBar position="static" color="default" sx={{ backgroundColor: '#1e1e1e' }}>
+      <MuiToolbar>
+        {/* Desktop Menu */}
+        {!isMobile && (
+          <Box sx={{ display: 'flex', gap: 1 }}>
+            {menuItems.map((item) =>
+              item.links ? (
+                <React.Fragment key={item.title}>
+                  <Button
+                    color="inherit"
+                    onClick={(e) => handleMenuOpen(e, item.title)}
+                  >
+                    {item.title}
+                  </Button>
+                  <Menu
+                    anchorEl={anchorEl}
+                    open={activeMenu === item.title}
+                    onClose={handleMenuClose}
+                  >
+                    {item.links.map((link) => (
+                      <MenuItem
+                        key={link.title}
+                        component="a"
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={handleMenuClose}
+                      >
+                        {link.title}
+                      </MenuItem>
+                    ))}
+                  </Menu>
+                </React.Fragment>
+              ) : (
+                <Button
+                  key={item.title}
+                  color="inherit"
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.title}
+                </Button>
+              )
+            )}
+          </Box>
+        )}
+
+        {/* Mobile Menu */}
+        {isMobile && (
+          <>
+            <IconButton
+              color="inherit"
+              onClick={handleMobileMenuOpen}
+              edge="start"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              anchorEl={mobileMenuAnchor}
+              open={Boolean(mobileMenuAnchor)}
+              onClose={handleMobileMenuClose}
+              PaperProps={{
+                sx: { minWidth: 200 },
+              }}
+            >
+              <List dense>
+                {menuItems.map((item) =>
+                  item.links ? (
+                    <React.Fragment key={item.title}>
+                      <Divider />
+                      <ListSubheader sx={{ backgroundColor: 'inherit' }}>
+                        {item.title}
+                      </ListSubheader>
+                      {item.links.map((link) => (
+                        <ListItem
+                          key={link.title}
+                          component="a"
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={handleMobileMenuClose}
+                          sx={{ pl: 4 }}
+                        >
+                          <ListItemText primary={link.title} />
+                        </ListItem>
+                      ))}
+                    </React.Fragment>
+                  ) : (
+                    <ListItem
+                      key={item.title}
+                      component="a"
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={handleMobileMenuClose}
+                    >
+                      <ListItemText primary={item.title} />
+                    </ListItem>
+                  )
+                )}
+              </List>
+            </Menu>
+          </>
+        )}
+
+        <Box sx={{ flexGrow: 1 }} />
+
+        <Button
+          color="inherit"
+          href="mailto:michaeldtalley@gmail.com"
+          target="_blank"
+        >
+          Email Mike
+        </Button>
+      </MuiToolbar>
+    </AppBar>
+  );
+}
+
+export default Toolbar;

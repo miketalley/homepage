@@ -1,46 +1,38 @@
-# Homepage
+# Mike Talley - Homepage
 
-[Vue](https://vuejs.org/)
+Personal homepage built with React, Vite, and Material-UI.
 
-[Vuex](https://vuex.vuejs.org/)
+## Features
 
-[Vuetify](https://vuetifyjs.com/en/)
+- React 18 with Vite for fast development and builds
+- Material-UI (MUI) for components and theming
+- tsparticles for animated background
+- Custom parallax effect on content
+- Responsive design
 
+## Development
 
-## Project setup
-```
+```bash
+# Install dependencies
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Start development server
+npm run dev
 
-### Compiles and minifies for production
-```
+# Build for production
 npm run build
+
+# Preview production build
+npm run preview
+
+# Start production server
+npm start
 ```
 
-### Run your tests
-```
-npm run test
-```
+## Tech Stack
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- **React 18** - UI framework
+- **Vite** - Build tool
+- **MUI 5** - Component library
+- **tsparticles** - Particle animation
+- **Express** - Production server

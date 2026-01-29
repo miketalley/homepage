@@ -27,8 +27,13 @@ const menuItems = [
     url: 'https://github.com/miketalley',
   },
   {
-    title: 'Bodlytics',
-    url: 'https://bodlytics.com',
+    title: 'Project Examples',
+    links: [
+      {
+        title: 'Bodlytics',
+        url: 'https://bodlytics.com',
+      },
+    ],
   },
 ];
 
@@ -58,7 +63,7 @@ function Toolbar() {
   };
 
   return (
-    <AppBar position="static" color="default" sx={{ backgroundColor: '#1e1e1e' }}>
+    <AppBar position="static" color="default" sx={{ backgroundColor: '#1e1e1e', fontFamily: '"Open Sans", sans-serif' }}>
       <MuiToolbar>
         {/* Desktop Menu */}
         {!isMobile && (

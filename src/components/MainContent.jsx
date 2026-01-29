@@ -98,15 +98,8 @@ function MainContent() {
               I'm passionate about developer experience — creating tools that simplify the coding 
               environment, reduce friction, and amplify engineering teams. Continuously learning and 
               exploring new technologies, with a particular focus on AI-augmented development that 
-              accelerates team velocity while maintaining high code quality.
-            </Typography>
-          </ParallaxFlex>
-
-          <ParallaxFlex depth={1.3} mb={3}>
-            <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-              Previously at HubSpot where I designed and launched the VSCode Extension, and at Monitaur 
-              building AI governance tools. I believe in eliminating repetitive work through intelligent 
-              automation and mentoring fellow developers to grow together.
+              accelerates team velocity while maintaining high code quality. I believe in eliminating 
+              repetitive work through intelligent automation and mentoring fellow developers to grow together.
             </Typography>
           </ParallaxFlex>
         </Box>

@@ -27,25 +27,8 @@ const menuItems = [
     url: 'https://github.com/miketalley',
   },
   {
-    title: 'App Examples',
-    links: [
-      {
-        title: 'Gamebonder',
-        url: 'http://gamebonder.herokuapp.com/',
-      },
-      {
-        title: 'Beerbonder',
-        url: 'http://beerbonder.herokuapp.com/',
-      },
-      {
-        title: 'Is it just me, or?',
-        url: 'http://isitjustmeor.herokuapp.com/',
-      },
-      {
-        title: 'Lunch Date',
-        url: 'http://lunchdate.herokuapp.com/',
-      },
-    ],
+    title: 'Bodlytics',
+    url: 'https://bodlytics.com',
   },
 ];
 

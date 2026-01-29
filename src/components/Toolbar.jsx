@@ -74,14 +74,10 @@ function Toolbar() {
           <Box sx={{ display: 'flex', gap: 1 }}>
             {menuItems.map((item) =>
               item.links ? (
-                <Box
-                  key={item.title}
-                  onMouseEnter={(e) => handleMenuOpen(e, item.title)}
-                  onMouseLeave={handleMenuClose}
-                  sx={{ display: 'inline-block' }}
-                >
+                <React.Fragment key={item.title}>
                   <Button
                     color="inherit"
+                    onClick={(e) => handleMenuOpen(e, item.title)}
                     sx={{ textTransform: 'none' }}
                   >
                     {item.title}
@@ -90,9 +86,6 @@ function Toolbar() {
                     anchorEl={anchorEl}
                     open={activeMenu === item.title}
                     onClose={handleMenuClose}
-                    MenuListProps={{
-                      onMouseLeave: handleMenuClose,
-                    }}
                     PaperProps={{
                       sx: { fontFamily: '"Open Sans", sans-serif' },
                     }}
@@ -105,13 +98,17 @@ function Toolbar() {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={handleMenuClose}
-                        sx={{ fontFamily: '"Open Sans", sans-serif' }}
+                        sx={{ 
+                          fontFamily: '"Open Sans", sans-serif',
+                          fontSize: '0.875rem',
+                          fontWeight: 500,
+                        }}
                       >
                         {link.title}
                       </MenuItem>
                     ))}
                   </Menu>
-                </Box>
+                </React.Fragment>
               ) : (
                 <Button
                   key={item.title}

@@ -97,15 +97,17 @@ function MainContent() {
             <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
               I'm passionate about both the customer and developer experience — building intuitive 
               products that users love, and creating tools that simplify workflows and amplify 
-              engineering teams. Continuously exploring AI-augmented development to accelerate 
-              velocity while maintaining high code quality.
+              engineering teams. I'm continuously exploring AI-augmented development to accelerate 
+              velocity while maintaining high code quality. I believe in eliminating repetitive work 
+              through intelligent automation and mentoring fellow developers to grow together.
             </Typography>
           </ParallaxFlex>
 
           <ParallaxFlex depth={1.3} mb={3}>
             <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-              I believe in eliminating repetitive work through intelligent automation and mentoring 
-              fellow developers to grow together.
+              I'm looking for a team of knowledgeable, humble engineers who are open to giving and 
+              receiving feedback to foster an environment of growth for everyone. I thrive in 
+              environments where people are open to new ideas and embrace new technologies.
             </Typography>
           </ParallaxFlex>
         </Box>

@@ -44,7 +44,7 @@ function MainContent() {
                   variant="h3"
                   sx={{
                     fontWeight: 300,
-                    fontFamily: '"Raleway", sans-serif',
+                    fontFamily: '"Merriweather", Georgia, serif',
                   }}
                 >
                   Mike Talley

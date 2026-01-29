@@ -23,6 +23,10 @@ const menuItems = [
     url: '/assets/MikeTalleyResume.pdf',
   },
   {
+    title: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/michaeldtalley/',
+  },
+  {
     title: 'Github',
     url: 'https://github.com/miketalley',
   },

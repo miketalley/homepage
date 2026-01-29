@@ -57,7 +57,18 @@ function MainContent() {
                     fontWeight: 400,
                   }}
                 >
-                  Full Stack Web Developer
+                  Senior Software Engineer
+                </Typography>
+              </ParallaxFlex>
+              <ParallaxFlex depth={0.22} mb={1}>
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontStyle: 'italic',
+                    color: 'rgba(255, 255, 255, 0.85)',
+                  }}
+                >
+                  React Specialist | AI-Enhanced Development
                 </Typography>
               </ParallaxFlex>
               <ParallaxFlex depth={0.25} mb={4}>
@@ -67,7 +78,7 @@ function MainContent() {
                     color: 'rgba(255, 255, 255, 0.7)',
                   }}
                 >
-                  Boston, MA
+                  Medford, MA
                 </Typography>
               </ParallaxFlex>
             </Box>
@@ -76,32 +87,26 @@ function MainContent() {
           {/* Bio Paragraphs */}
           <ParallaxFlex depth={0.6} mb={3}>
             <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-              I am a front end developer that loves learning and working with new
-              technologies. My focus is on writing code that not only works, but is
-              concise, easily understandable, and extensible. Continually improving as a
-              developer is what I strive for and achieve through learning from my peers as
-              well as finding and consuming online resources. I believe sharing knowledge
-              between team members is an integral key of a successful team.
+              Customer-centric software engineer with 10+ years of experience building production 
+              web applications and developer tools. Deep expertise in React, TypeScript, and Node.js, 
+              with a strong track record of translating customer needs into reliable, scalable solutions.
             </Typography>
           </ParallaxFlex>
 
           <ParallaxFlex depth={0.9} mb={3}>
             <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-              I am currently a Senior Front End Developer at ThriveHive in Boston, MA. We utilize
-              many technologies including Vue, Node, Express, AWS, Java, AngularJS, Springboot, and
-              Grails to create a service-oriented architecture of applications that, together, deliver
-              our guided marketing solution to small businesses. My day-to-day involves coding in
-              mostly Javascript on the front-end to create highly intuitive UI components. A big part
-              of being senior level is mentoring more junior developers and promoting their continued
-              learning and growth.
+              I'm passionate about developer experience — creating tools that simplify the coding 
+              environment, reduce friction, and amplify engineering teams. Continuously learning and 
+              exploring new technologies, with a particular focus on AI-augmented development that 
+              accelerates team velocity while maintaining high code quality.
             </Typography>
           </ParallaxFlex>
 
           <ParallaxFlex depth={1.3} mb={3}>
             <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-              Javascript is my native language and I look forward to learning more ways to solve
-              problems and create new and beautiful applications with it. Vue and Node/Express are two
-              technologies that I am extremely excited about and would like to work with in the future.
+              Previously at HubSpot where I designed and launched the VSCode Extension, and at Monitaur 
+              building AI governance tools. I believe in eliminating repetitive work through intelligent 
+              automation and mentoring fellow developers to grow together.
             </Typography>
           </ParallaxFlex>
         </Box>

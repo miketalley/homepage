@@ -95,11 +95,10 @@ function MainContent() {
 
           <ParallaxFlex depth={0.9} mb={3}>
             <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-              I'm passionate about both the customer and developer experience — creating tools that simplify the coding 
-              environment, reduce friction, and amplify engineering teams. Continuously learning and 
-              exploring new technologies, with a particular focus on AI-augmented development that 
-              accelerates team velocity while maintaining high code quality. I believe in eliminating 
-              repetitive work through intelligent automation and mentoring fellow developers to grow together.
+              I'm passionate about both the customer and developer experience — building intuitive 
+              products that users love, and creating tools that simplify workflows and amplify 
+              engineering teams. Continuously exploring AI-augmented development to accelerate 
+              velocity while maintaining high code quality.
             </Typography>
           </ParallaxFlex>
         </Box>

@@ -87,11 +87,9 @@ function MainContent() {
           {/* Bio Paragraphs */}
           <ParallaxFlex depth={0.6} mb={3}>
             <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-              I am a software engineer that loves learning and working with new technologies. My 
-              focus is on writing code that not only works, but is concise, easily understandable, 
-              and extensible. Continually improving as a developer is what I strive for and achieve 
-              through learning from my peers as well as finding and consuming online resources. I 
-              believe sharing knowledge between team members is an integral key of a successful team.
+              Customer-centric software engineer with 10+ years of experience building production 
+              web applications and developer tools. Deep expertise in React, TypeScript, and Node.js, 
+              with a strong track record of translating customer needs into reliable, scalable solutions.
             </Typography>
           </ParallaxFlex>
 
@@ -99,18 +97,15 @@ function MainContent() {
             <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
               I'm passionate about both the customer and developer experience — building intuitive 
               products that users love, and creating tools that simplify workflows and amplify 
-              engineering teams. My day-to-day involves coding primarily in React and TypeScript 
-              on the front-end to create highly intuitive UI components. A big part of being senior 
-              level is mentoring more junior developers and promoting their continued learning and growth.
+              engineering teams. Continuously exploring AI-augmented development to accelerate 
+              velocity while maintaining high code quality.
             </Typography>
           </ParallaxFlex>
 
           <ParallaxFlex depth={1.3} mb={3}>
             <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-              I believe in eliminating repetitive work through intelligent automation. I'm continuously 
-              exploring AI-augmented development to accelerate velocity while maintaining high code 
-              quality. React and TypeScript are technologies that I am extremely excited about and 
-              look forward to continuing to build with in the future.
+              I believe in eliminating repetitive work through intelligent automation and mentoring 
+              fellow developers to grow together.
             </Typography>
           </ParallaxFlex>
         </Box>

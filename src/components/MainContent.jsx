@@ -101,6 +101,13 @@ function MainContent() {
               velocity while maintaining high code quality.
             </Typography>
           </ParallaxFlex>
+
+          <ParallaxFlex depth={1.3} mb={3}>
+            <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
+              I believe in eliminating repetitive work through intelligent automation and mentoring 
+              fellow developers to grow together.
+            </Typography>
+          </ParallaxFlex>
         </Box>
       </Box>
     </Container>

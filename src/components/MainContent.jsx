@@ -105,8 +105,9 @@ function MainContent() {
 
           <ParallaxFlex depth={1.3} mb={3}>
             <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-              I'm looking for a team of knowledgeable, humble engineers who are open to giving and 
-              receiving feedback to foster an environment of growth for everyone. I thrive in 
+              I'm looking for a company with a clear vision I can relate to, and a team of knowledgeable, 
+              humble people who are open to giving and receiving feedback to foster an environment 
+              of growth for everyone. I thrive in 
               environments where people are open to new ideas and embrace new technologies.
             </Typography>
           </ParallaxFlex>

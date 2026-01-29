@@ -82,6 +82,7 @@ function Toolbar() {
                 >
                   <Button
                     color="inherit"
+                    sx={{ textTransform: 'none' }}
                   >
                     {item.title}
                   </Button>
@@ -118,6 +119,7 @@ function Toolbar() {
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  sx={{ textTransform: 'none' }}
                 >
                   {item.title}
                 </Button>
@@ -190,6 +192,7 @@ function Toolbar() {
           color="inherit"
           href="mailto:michaeldtalley@gmail.com"
           target="_blank"
+          sx={{ textTransform: 'none' }}
         >
           Email Mike
         </Button>

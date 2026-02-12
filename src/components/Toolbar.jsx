@@ -19,10 +19,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const menuItems = [
   {
-    title: 'Resume',
-    url: '/assets/MikeTalleyResume.pdf',
-  },
-  {
     title: 'LinkedIn',
     url: 'https://www.linkedin.com/in/michaeldtalley/',
   },

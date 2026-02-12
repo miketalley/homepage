@@ -37,6 +37,10 @@ const menuItems = [
         title: 'Bodlytics',
         url: 'https://bodlytics.com',
       },
+      {
+        title: 'Wispuh',
+        url: 'https://wispuh.com',
+      },
     ],
   },
 ];

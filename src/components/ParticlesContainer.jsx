@@ -1,7 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
-import { Box } from '@mui/material';
 
 // Initialize particles engine once
 let initialized = false;
@@ -11,7 +10,7 @@ const initPromise = initParticlesEngine(async (engine) => {
   initialized = true;
 });
 
-function ParticlesContainer({ children }) {
+function ParticlesContainer() {
   const [ready, setReady] = React.useState(initialized);
 
   React.useEffect(() => {
@@ -30,7 +29,9 @@ function ParticlesContainer({ children }) {
       },
       fpsLimit: 60,
       interactivity: {
-        detect_on: 'canvas',
+        // The app layout sits above the canvas at z-index 1, so canvas-scoped
+        // detection would never see the cursor. Listen on the window instead.
+        detectsOn: 'window',
         events: {
           onHover: {
             enable: true,
@@ -101,39 +102,17 @@ function ParticlesContainer({ children }) {
     // Particles loaded
   }, []);
 
+  if (!ready) return null;
+
+  // NOTE: @tsparticles/react renders <div id={id} className={className} /> and
+  // ignores any `style` prop, so positioning must come from CSS. See the
+  // #tsparticles rule in index.css.
   return (
-    <Box
-      sx={{
-        position: 'relative',
-        minHeight: 'calc(100vh - 64px)',
-        width: '100%',
-      }}
-    >
-      <Box
-        sx={{
-          position: 'relative',
-          zIndex: 1,
-          py: 4,
-        }}
-      >
-        {children}
-      </Box>
-      {ready && (
-        <Particles
-          id="tsparticles"
-          particlesLoaded={particlesLoaded}
-          options={particlesOptions}
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            zIndex: 0,
-          }}
-        />
-      )}
-    </Box>
+    <Particles
+      id="tsparticles"
+      particlesLoaded={particlesLoaded}
+      options={particlesOptions}
+    />
   );
 }
 

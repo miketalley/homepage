@@ -8,7 +8,7 @@ import {
   IconButton,
   Box,
   List,
-  ListItem,
+  ListItemButton,
   ListItemText,
   Divider,
   ListSubheader,
@@ -17,7 +17,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-const menuItems = [
+export const menuItems = [
   {
     title: 'LinkedIn',
     url: 'https://www.linkedin.com/in/michaeldtalley/',
@@ -27,7 +27,7 @@ const menuItems = [
     url: 'https://github.com/miketalley',
   },
   {
-    title: 'Project Examples',
+    title: 'Projects',
     links: [
       {
         title: 'Bodlytics',
@@ -36,6 +36,14 @@ const menuItems = [
       {
         title: 'Wispuh',
         url: 'https://wispuh.com',
+      },
+      {
+        title: 'Milk Barf Games',
+        url: 'https://milkbarf.com',
+      },
+      {
+        title: 'Direlands: Extraction',
+        url: 'https://store.steampowered.com/app/4726670/Direlands_Extraction/',
       },
     ],
   },
@@ -152,7 +160,7 @@ function Toolbar() {
                         {item.title}
                       </ListSubheader>
                       {item.links.map((link) => (
-                        <ListItem
+                        <ListItemButton
                           key={link.title}
                           component="a"
                           href={link.url}
@@ -162,11 +170,11 @@ function Toolbar() {
                           sx={{ pl: 4 }}
                         >
                           <ListItemText primary={link.title} />
-                        </ListItem>
+                        </ListItemButton>
                       ))}
                     </React.Fragment>
                   ) : (
-                    <ListItem
+                    <ListItemButton
                       key={item.title}
                       component="a"
                       href={item.url}
@@ -175,7 +183,7 @@ function Toolbar() {
                       onClick={handleMobileMenuClose}
                     >
                       <ListItemText primary={item.title} />
-                    </ListItem>
+                    </ListItemButton>
                   )
                 )}
               </List>
@@ -188,7 +196,6 @@ function Toolbar() {
         <Button
           color="inherit"
           href="mailto:michaeldtalley@gmail.com"
-          target="_blank"
           sx={{ textTransform: 'none' }}
         >
           Email Mike

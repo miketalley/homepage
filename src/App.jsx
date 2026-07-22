@@ -12,7 +12,7 @@ const darkTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Open Sans", "Helvetica", "Arial", sans-serif',
   },
 });
 
@@ -20,12 +20,19 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <ParticlesContainer />
+      <Box
+        sx={{
+          minHeight: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          position: 'relative',
+          zIndex: 1,
+        }}
+      >
         <Toolbar />
-        <Box component="main" sx={{ flexGrow: 1, position: 'relative' }}>
-          <ParticlesContainer>
-            <MainContent />
-          </ParticlesContainer>
+        <Box component="main" sx={{ flexGrow: 1, py: 4 }}>
+          <MainContent />
         </Box>
       </Box>
     </ThemeProvider>
